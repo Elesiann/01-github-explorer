@@ -1,0 +1,48 @@
+section.repository-list {
+  margin: 40px;
+
+  h1 {
+    margin-bottom: 16px;
+  }
+
+  ul {
+    list-style: none;
+
+    li {
+      margin-bottom: 3rem;
+
+      // last child estiliza a ultima propriedade
+      &last-child {
+        margin-bottom: 0;
+      }
+
+      //ou, toda li que possui outra li em cima (&) vai ser aplicada esta estilização
+      //   li {
+      //       & + li {
+      //           margin-top: 1.5rem;
+      //       }
+      //   }
+
+      strong {
+        color: #444;
+      }
+
+      p {
+        font-size: 14px;
+        color: #444;
+        margin-top: 8px;
+      }
+
+      a {
+        display: inline-block;
+        margin-top: 0.2rem;
+        text-decoration: none;
+        color: #8257e6;
+      }
+
+      a:hover {
+        color: #5b37af;
+      }
+    }
+  }
+}
