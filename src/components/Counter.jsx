@@ -13,14 +13,14 @@ export function Counter() {
 
   // isso acontece tambem com o setCounter, por ser imutável, preciso criar uma nova variável que define um novo valor para o Counter
   function increment() {
-    setCounter(counter + 1);
+    setCounter(counter + 10);
   }
 
   return (
     <div>
       <h2>{counter}</h2>
       <button type="button" onClick={increment}>
-        Incrementar 
+        Incrementar 10
       </button>
     </div>
   );
