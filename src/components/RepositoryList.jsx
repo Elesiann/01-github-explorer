@@ -1,5 +1,7 @@
 import { RepositoryItem } from "./RepositoryItem";
 
+import "../styles/repositories.scss";
+
 const repository = {
   name: "CV | Giovani Machado Corrêa",
   description: "Meu cvzinho lindooo aiii",
