@@ -3,9 +3,15 @@ import { RepositoryItem } from "./RepositoryItem";
 import "../styles/repositories.scss";
 import { useState, useEffect } from "react";
 
+interface Repository {
+  name: string;
+  description: string;
+  html_url: string;
+}
+
 export function RepositoryList() {
   // useState é um Hook que te permite adicionar o state do React a um componente de função
-  const [repositories, setRepositories] = useState([]);
+  const [repositories, setRepositories] = useState<Repository[]>([]);
 
   // useEffect dispara quando algo acontecer na aplicação (uma variável que muda, por exemplo)
   // qual funçao executar () => {}, quando quero executar []
